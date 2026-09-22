@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kristian Ronan A. Santiago — Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <span class="chess-logo">♚</span> KS
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="toggler-icon">&#9776;</span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero" class="hero-section">
+    <div class="chess-bg-pattern"></div>
+
+    <div class="floating-piece piece-1">&#9819;</div>
+    <div class="floating-piece piece-2">&#9822;</div>
+    <div class="floating-piece piece-3">&#9820;</div>
+    <div class="floating-piece piece-4">&#9821;</div>
+    <div class="floating-piece piece-5">&#9823;</div>
+
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-lg-7">
+                <div class="hero-content">
+                    <div class="hero-eyebrow">
+                        <span class="piece-icon">&#9823;</span>
+                        <span>Full Stack Developer</span>
+                    </div>
+                    <h1 class="hero-name">
+                        <span class="name-first">KRISTIAN</span>
+                        <span class="name-middle">RONAN A.</span>
+                        <span class="name-last">SANTIAGO</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        <span id="typed-text"></span><span class="cursor-blink">|</span>
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-chess-primary">View Work</a>
+                        <a href="#contact" class="btn btn-chess-outline">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 d-none d-lg-flex justify-content-center align-items-center">
+                <div class="mini-board-wrapper" id="boardWrapper">
+                    <div class="mini-board" id="miniBoard"></div>
+                    <div class="board-label">e4 — e5 — Nf3</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="scroll-indicator">
+        <div class="scroll-line"></div>
+        <span>Scroll</span>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about-section">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-5">
+                <div class="about-visual">
+                    <div class="avatar-frame">
+                        <div class="avatar-inner">
+                            <span class="avatar-piece">&#9818;</span>
+                            <!-- Replace with: <img src="your-photo.jpg" alt="Kristian Santiago"> -->
+                        </div>
+                        <div class="avatar-corner tl"></div>
+                        <div class="avatar-corner tr"></div>
+                        <div class="avatar-corner bl"></div>
+                        <div class="avatar-corner br"></div>
+                    </div>
+                    <div class="about-board-deco"></div>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="section-label">
+                    <span class="piece-icon">&#9817;</span> The Player
+                </div>
+                <h2 class="section-title">Every <em>great</em> game<br>starts with a plan.</h2>
+                <p class="about-text">
+                    I'm Kristian Ronan A. Santiago — a full-stack developer who approaches every project like a chess grandmaster.
+                    Strategic, precise, and always thinking several moves ahead. I build digital experiences that are as
+                    elegant as they are powerful.
+                </p>
+                <p class="about-text">
+                    From pixel-perfect frontends to scalable backends, I craft solutions that don't just solve today's
+                    problems — they anticipate tomorrow's.
+                </p>
+                <div class="stats-row">
+                    <div class="stat-item">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Years Exp.</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">20+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Technologies</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Committed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="skills-section">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <div class="section-label justify-content-center">
+                <span class="piece-icon">&#9819;</span> The Arsenal
+            </div>
+            <h2 class="section-title">My Pieces on the Board</h2>
+            <p class="section-subtitle">Each skill is a piece with its own power — together, they're unstoppable.</p>
+        </div>
+
+        <div class="row g-3">
+            <div class="col-12">
+                <div class="skill-tier">
+                    <div class="tier-label">
+                        <span class="tier-piece">&#9818;</span>
+                        <span class="tier-name">King &mdash; Core Languages</span>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag king">JavaScript</span>
+                        <span class="skill-tag king">TypeScript</span>
+                        <span class="skill-tag king">Python</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="skill-tier">
+                    <div class="tier-label">
+                        <span class="tier-piece">&#9819;</span>
+                        <span class="tier-name">Queen &mdash; Most Powerful</span>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag queen">React</span>
+                        <span class="skill-tag queen">Next.js</span>
+                        <span class="skill-tag queen">Node.js</span>
+                        <span class="skill-tag queen">Express</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="skill-tier">
+                    <div class="tier-label">
+                        <span class="tier-piece">&#9820;</span>
+                        <span class="tier-name">Rook &mdash; Solid Infrastructure</span>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag rook">PostgreSQL</span>
+                        <span class="skill-tag rook">MongoDB</span>
+                        <span class="skill-tag rook">Docker</span>
+                        <span class="skill-tag rook">AWS</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="skill-tier">
+                    <div class="tier-label">
+                        <span class="tier-piece">&#9821;</span>
+                        <span class="tier-name">Bishop &mdash; Specialized Skills</span>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag bishop">GraphQL</span>
+                        <span class="skill-tag bishop">REST APIs</span>
+                        <span class="skill-tag bishop">Tailwind CSS</span>
+                        <span class="skill-tag bishop">Figma</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="skill-tier">
+                    <div class="tier-label">
+                        <span class="tier-piece">&#9822;</span>
+                        <span class="tier-name">Knight &mdash; Unique Moves</span>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag knight">Machine Learning</span>
+                        <span class="skill-tag knight">WebSockets</span>
+                        <span class="skill-tag knight">Three.js</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="skill-tier">
+                    <div class="tier-label">
+                        <span class="tier-piece">&#9823;</span>
+                        <span class="tier-name">Pawn &mdash; Tools &amp; Utilities</span>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag pawn">Git</span>
+                        <span class="skill-tag pawn">GitHub</span>
+                        <span class="skill-tag pawn">VS Code</span>
+                        <span class="skill-tag pawn">Postman</span>
+                        <span class="skill-tag pawn">Linux</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="projects-section">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <div class="section-label justify-content-center">
+                <span class="piece-icon">&#9820;</span> Opening Moves
+            </div>
+            <h2 class="section-title">Select Games</h2>
+            <p class="section-subtitle">Calculated moves, executed with precision.</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="project-card">
+                    <div class="project-board-visual" style="--accent: #d4af37;">
+                        <div class="pb-grid"></div>
+                        <div class="pb-piece" style="color: #d4af37;">&#9819;</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-opening">The King's Gambit</div>
+                        <h3 class="project-title">Project Name One</h3>
+                        <p class="project-desc">A bold, aggressive approach to solving [problem]. Built with cutting-edge technology for maximum impact.</p>
+                        <div class="project-tags">
+                            <span class="proj-tag">React</span>
+                            <span class="proj-tag">Node.js</span>
+                            <span class="proj-tag">PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="proj-link">Live Demo &#8599;</a>
+                            <a href="#" class="proj-link">GitHub &#8599;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="project-card featured">
+                    <div class="featured-badge">&#9818; Featured</div>
+                    <div class="project-board-visual" style="--accent: #ffffff;">
+                        <div class="pb-grid dark"></div>
+                        <div class="pb-piece" style="color: #ffffff;">&#9822;</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-opening">The Sicilian Defence</div>
+                        <h3 class="project-title">Project Name Two</h3>
+                        <p class="project-desc">A defensive yet dynamic solution to [problem]. Engineered for scale, designed for users.</p>
+                        <div class="project-tags">
+                            <span class="proj-tag">Next.js</span>
+                            <span class="proj-tag">TypeScript</span>
+                            <span class="proj-tag">MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="proj-link">Live Demo &#8599;</a>
+                            <a href="#" class="proj-link">GitHub &#8599;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="project-card">
+                    <div class="project-board-visual" style="--accent: #a8c5da;">
+                        <div class="pb-grid"></div>
+                        <div class="pb-piece" style="color: #a8c5da;">&#9821;</div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-opening">The French Defence</div>
+                        <h3 class="project-title">Project Name Three</h3>
+                        <p class="project-desc">A methodical, structured approach that delivers elegant results. Every component placed with purpose.</p>
+                        <div class="project-tags">
+                            <span class="proj-tag">Python</span>
+                            <span class="proj-tag">FastAPI</span>
+                            <span class="proj-tag">Docker</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="proj-link">Live Demo &#8599;</a>
+                            <a href="#" class="proj-link">GitHub &#8599;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-5">
+            <a href="#" class="btn btn-chess-outline">View All Projects &#9823;</a>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <div class="section-label justify-content-center">
+                    <span class="piece-icon">&#9818;</span> Your Move
+                </div>
+                <h2 class="section-title contact-hero-title">Let's Play.</h2>
+                <p class="contact-subtitle">The best games begin with an opening. Make yours.</p>
+
+                <div class="contact-board">
+                    <a href="mailto:kristiansantiagoworks@gmail.com" class="contact-link">
+                        <span class="contact-piece">&#9820;</span>
+                        <span class="contact-method">Email</span>
+                        <span class="contact-value">kristiansantiagoworks@gmail.com</span>
+                    </a>
+                    <a href="#" class="contact-link">
+                        <span class="contact-piece">&#9822;</span>
+                        <span class="contact-method">LinkedIn</span>
+                        <span class="contact-value">linkedin.com/in/kristiansantiago</span>
+                    </a>
+                    <a href="#" class="contact-link">
+                        <span class="contact-piece">&#9823;</span>
+                        <span class="contact-method">GitHub</span>
+                        <span class="contact-value">github.com/kristiansantiago</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <span class="footer-logo">&#9818; KRISTIAN RONAN A. SANTIAGO</span>
+            </div>
+            <div class="col-md-6 text-md-end mt-2 mt-md-0">
+                <span class="footer-copy">&#9823; Checkmate the ordinary. &copy; 2026</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
